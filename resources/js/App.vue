@@ -1,6 +1,10 @@
 <template>
     <div>
-        <h3>This is Vue Main Component us</h3>
+        <router-link to="/">Home Page</router-link>
+        <br />
+        <router-link :to="{ name: 'about' }">About Page</router-link>
+
+        <router-view></router-view>
     </div>
 </template>
 <script>
